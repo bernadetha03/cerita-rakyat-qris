@@ -1,0 +1,3 @@
+<?php
+header('Content-Type: image/svg+xml');$o=htmlspecialchars($_GET['order']??'SIMULASI',ENT_QUOTES,'UTF-8');
+echo '<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500"><rect width="100%" height="100%" fill="white"/><rect x="35" y="35" width="430" height="430" fill="none" stroke="black" stroke-width="8"/><text x="250" y="210" text-anchor="middle" font-family="Arial" font-size="34" font-weight="bold">QRIS</text><text x="250" y="260" text-anchor="middle" font-family="Arial" font-size="20">MODE SIMULASI</text><text x="250" y="305" text-anchor="middle" font-family="Arial" font-size="16">'.$o.'</text><text x="250" y="355" text-anchor="middle" font-family="Arial" font-size="14">Gunakan tombol Simulasikan Berhasil</text></svg>';
